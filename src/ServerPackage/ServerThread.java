@@ -32,7 +32,7 @@ public class ServerThread {
                 System.out.printf("Client successfully connected: %s \n", newClient);
                 //System.out.println(clientThreads);
             } catch (IOException ioException){
-                System.out.println("Client unsuccessfully connected.");
+                System.out.println("Client unsuccessful connection.");
             }
             this.removeStoppedThreads();
         }

@@ -15,6 +15,7 @@ public class RunServer {
             }
             initializeShutdown(serverThread);
             System.out.println("Server successfully set up");
+            System.out.println("To stop the server, send a SIGINT (Cntrl C).");
             serverThread.runServer();
 
         }
