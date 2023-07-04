@@ -277,8 +277,6 @@ public class ClientThread extends Thread{
         }
 
         return "ERROR";
-
-
     }
 
     private String handleDeposit(final String depositInfo) {
