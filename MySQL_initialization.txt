@@ -14,8 +14,8 @@ CREATE TABLE username_amount (
     FOREIGN KEY (username) REFERENCES username_password(username)
 );
 
-CREATE USER 'ClientThread'@'localhost' IDENTIFIED BY 'Password';
-GRANT SELECT ON SimpleBankSQL.* TO 'ClientThread'@'localhost';
-GRANT UPDATE ON SimpleBankSQL.* TO 'ClientThread'@'localhost';
+CREATE USER 'ServerPackage.ClientThread'@'localhost' IDENTIFIED BY 'Password';
+GRANT SELECT ON SimpleBankSQL.* TO 'ServerPackage.ClientThread'@'localhost';
+GRANT UPDATE ON SimpleBankSQL.* TO 'ServerPackage.ClientThread'@'localhost';
 
 

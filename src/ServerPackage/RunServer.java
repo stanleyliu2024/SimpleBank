@@ -1,7 +1,9 @@
+package ServerPackage;
+
 import java.io.*;
 
 
-public class Run {
+public class RunServer {
         public static void main(String args[]) {
             ServerThread serverThread = null;
             try {
