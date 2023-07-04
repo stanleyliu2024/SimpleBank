@@ -1,0 +1,21 @@
+USE SimpleBankSQL;
+
+CREATE TABLE username_password (
+	username VARCHAR(50),
+    pass VARCHAR(100),
+
+    PRIMARY KEY(username)
+);
+
+CREATE TABLE username_amount (
+	username VARCHAR(50),
+    amount INT,
+	PRIMARY KEY(username),
+    FOREIGN KEY (username) REFERENCES username_password(username)
+);
+
+CREATE USER 'ClientThread'@'localhost' IDENTIFIED BY 'Password';
+GRANT SELECT ON SimpleBankSQL.* TO 'ClientThread'@'localhost';
+GRANT UPDATE ON SimpleBankSQL.* TO 'ClientThread'@'localhost';
+
+
