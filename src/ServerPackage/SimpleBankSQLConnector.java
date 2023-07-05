@@ -4,7 +4,7 @@ import java.sql.*;
 
 final class SimpleBankSQLConnector {
     final static private String connectionInfo = "jdbc:mysql://localhost:3306/SimpleBankSQL";
-    final static private String connectionUsername = "Server.ClientThread";
+    final static private String connectionUsername = "ClientThread";
     final static private String connectionPassword = "Password";
 
     final static public int SQL_CONNECT_ERROR = 1;
@@ -27,6 +27,7 @@ final class SimpleBankSQLConnector {
                 return NO_QUERY_FOUND;
             }
         } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
             return SQL_CONNECT_ERROR;
         }
 
