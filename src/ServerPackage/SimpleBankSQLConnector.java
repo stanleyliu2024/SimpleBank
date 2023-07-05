@@ -27,7 +27,6 @@ final class SimpleBankSQLConnector {
                 return NO_QUERY_FOUND;
             }
         } catch (SQLException sqlException) {
-            sqlException.printStackTrace();
             return SQL_CONNECT_ERROR;
         }
 
