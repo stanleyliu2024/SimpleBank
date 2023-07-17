@@ -10,9 +10,9 @@ Welcome to my simple bank terminal application written in Java and uses a very s
 - Multithreading: To keep track of multiple users potentially logging on at once, multiple threads are created
 
 
-## Future expansions planned
-- Adding a frontend web that will run on local host and connect to the server including a full UI
-- Adding a way to add users to the MySQL database directly without having to manually add a user.
+## Limitations
+- There is no GUI as I found this project important to showcase my ability on sockets and multithreading.
+- There is no way to add a new user to the database through java. This must be done through MySQL queries.
 
 
 
